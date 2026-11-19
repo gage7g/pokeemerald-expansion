@@ -37,6 +37,8 @@ TestIsland_Text_NoRoom:
 TestIsland_EventScript_ShadowLugiaTest::
 	lockall
 	setvar VAR_TEMP_D, 1
+	givemon SPECIES_LUGIA_SHADOW, 10
+	msgbox TestIsland_Text_ShadowLugiaGiven, MSGBOX_DEFAULT
 	msgbox TestIsland_Text_ShadowLugia, MSGBOX_DEFAULT
 	setwildbattle SPECIES_LUGIA_SHADOW, 10
 	dowildbattle
@@ -45,3 +47,6 @@ TestIsland_EventScript_ShadowLugiaTest::
 
 TestIsland_Text_ShadowLugia:
 	.string "A dark shape rises from the sea!$"
+
+TestIsland_Text_ShadowLugiaGiven:
+	.string "You got a Shadow Lugia too!$"
