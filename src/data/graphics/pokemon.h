@@ -9657,9 +9657,11 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #if !P_GBA_STYLE_SPECIES_GFX
     const u32 gMonFrontPic_LugiaShadow[] = INCGFX_U32("graphics/pokemon/lugia/anim_front_shadow.png", ".4bpp.smol");
     const u16 gMonPalette_LugiaShadow[] = INCGFX_U16("graphics/pokemon/lugia/shadow.pal", ".gbapal");
+    const u32 gMonBackPic_LugiaShadow[] = INCGFX_U32("graphics/pokemon/lugia/back_shadow.png", ".4bpp.smol");
 #else
     const u32 gMonFrontPic_LugiaShadow[] = INCGFX_U32("graphics/pokemon/lugia/anim_front_gba.png", ".4bpp.smol");
     const u16 gMonPalette_LugiaShadow[] = INCGFX_U16("graphics/pokemon/lugia/shadow_gba.pal", ".gbapal");
+    const u32 gMonBackPic_LugiaShadow[] = INCGFX_U32("graphics/pokemon/lugia/back_gba.png", ".4bpp.smol");
 #endif //P_GBA_STYLE_SPECIES_GFX
 #if !P_GBA_STYLE_SPECIES_ICONS
     const u8 gMonIcon_Lugia[] = INCGFX_U8("graphics/pokemon/lugia/icon.png", ".4bpp");
