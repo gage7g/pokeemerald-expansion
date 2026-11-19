@@ -32,3 +32,16 @@ TestIsland_Text_GotMon:
 
 TestIsland_Text_NoRoom:
 	.string "No room in your party.$"
+
+@ Test: forced battle with Shadow Lugia (level 10) so you can see its look. Stepping on the tile starts it.
+TestIsland_EventScript_ShadowLugiaTest::
+	lockall
+	setvar VAR_TEMP_D, 1
+	msgbox TestIsland_Text_ShadowLugia, MSGBOX_DEFAULT
+	setwildbattle SPECIES_LUGIA_SHADOW, 10
+	dowildbattle
+	releaseall
+	end
+
+TestIsland_Text_ShadowLugia:
+	.string "A dark shape rises from the sea!$"

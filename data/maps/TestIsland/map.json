@@ -35,6 +35,15 @@
       "var": "VAR_TEMP_E",
       "var_value": "0",
       "script": "TestIsland_EventScript_GiveTestMon"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 7,
+      "elevation": 3,
+      "var": "VAR_TEMP_D",
+      "var_value": "0",
+      "script": "TestIsland_EventScript_ShadowLugiaTest"
     }
   ],
   "bg_events": []
