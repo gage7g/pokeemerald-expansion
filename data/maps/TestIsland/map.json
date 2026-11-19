@@ -26,6 +26,15 @@
       "var": "VAR_TEMP_F",
       "var_value": "0",
       "script": "TestIsland_EventScript_WarpOut"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 7,
+      "elevation": 3,
+      "var": "VAR_TEMP_E",
+      "var_value": "0",
+      "script": "TestIsland_EventScript_GiveTestMon"
     }
   ],
   "bg_events": []
