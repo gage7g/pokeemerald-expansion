@@ -792,6 +792,7 @@ gStdScripts_End::
 	.include "data/maps/BirthIsland_Harbor_Frlg/scripts.inc"
 	.include "data/maps/NavelRock_Harbor_Frlg/scripts.inc"
 	.include "data/maps/PalletTown_Frlg/scripts.inc"
+	.include "data/maps/TestIsland/scripts.inc"
 	.include "data/maps/ViridianCity_Frlg/scripts.inc"
 	.include "data/maps/PewterCity_Frlg/scripts.inc"
 	.include "data/maps/CeruleanCity_Frlg/scripts.inc"

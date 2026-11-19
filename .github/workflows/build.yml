@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - upcoming
+      - new-region
   pull_request:
 
 env:
