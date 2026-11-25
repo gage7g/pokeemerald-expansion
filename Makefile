@@ -27,10 +27,6 @@ KEEP_TEMPS  ?= 0
 
 # `File name`.gba
 FILE_NAME := poke$(BUILD_NAME)
-# Pokémon Shining Helix: the FireRed build is our game, so name its ROM file after it
-ifeq ($(BUILD_NAME),firered)
-  FILE_NAME := ShiningHelix
-endif
 BUILD_DIR := build
 
 # Compares the ROM to a checksum of the original - only makes sense using when non-modern
