@@ -6803,6 +6803,21 @@ static const struct LevelUpMove sLugiaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(90, MOVE_SKY_ATTACK),
     LEVEL_UP_END
 };
+
+// Shining Helix: Shadow Lugia knows its XD signature moves (plus Aeroblast and Recover)
+// until level 63, so any wild or gift Shadow Lugia below that has exactly these four.
+static const struct LevelUpMove sLugiaShadowLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_AEROBLAST),
+    LEVEL_UP_MOVE( 1, MOVE_RECOVER),
+    LEVEL_UP_MOVE( 1, MOVE_SHADOW_STORM),
+    LEVEL_UP_MOVE( 1, MOVE_SHADOW_BLAST),
+    LEVEL_UP_MOVE(63, MOVE_CALM_MIND),
+    LEVEL_UP_MOVE(63, MOVE_RAIN_DANCE),
+    LEVEL_UP_MOVE(72, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(81, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(90, MOVE_SKY_ATTACK),
+    LEVEL_UP_END
+};
 #endif //P_FAMILY_LUGIA
 
 #if P_FAMILY_HO_OH
