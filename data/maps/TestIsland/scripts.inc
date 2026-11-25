@@ -50,3 +50,27 @@ TestIsland_Text_ShadowLugia:
 
 TestIsland_Text_ShadowLugiaGiven:
 	.string "You got a Shadow Lugia too!$"
+
+@ Test: Mega Evolution. Gives the Mega Bracelet and a Camerupt holding Cameruptite, then a trainer battle
+@ against a Garchomp holding Garchompite Z, so both sides can Mega Evolve.
+TestIsland_EventScript_MegaTest::
+	lockall
+	setvar VAR_TEMP_C, 1
+	checkitem ITEM_MEGA_RING
+	goto_if_eq VAR_RESULT, TRUE, TestIsland_EventScript_MegaTestGiveMon
+	giveitem ITEM_MEGA_RING
+TestIsland_EventScript_MegaTestGiveMon::
+	givemon SPECIES_CAMERUPT, 50, item=ITEM_CAMERUPTITE, move1=MOVE_FLAMETHROWER, move2=MOVE_EARTH_POWER, move3=MOVE_ROCK_SLIDE, move4=MOVE_PROTECT
+	goto_if_eq VAR_RESULT, 2, TestIsland_EventScript_NoRoom
+	msgbox TestIsland_Text_MegaTestIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_TEST_MEGA, TestIsland_Text_MegaTestDefeat
+	releaseall
+	end
+
+TestIsland_Text_MegaTestIntro:
+	.string "You got a Camerupt holding its Mega\n"
+	.string "Stone. Time to test Mega Evolution!$"
+
+TestIsland_Text_MegaTestDefeat:
+	.string "Mega test done!$"
+

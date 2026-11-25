@@ -13787,3 +13787,20 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Muk
 Level: 39
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+=== TRAINER_TEST_MEGA ===
+Name: MEGA TEST
+Class: Cooltrainer Frlg
+Pic: Cooltrainer F Frlg
+Gender: Female
+Music: Serious
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Garchomp @ Garchompite Z
+Level: 50
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Draco Meteor
+- Earthquake
+- Fire Blast
+- Stone Edge
