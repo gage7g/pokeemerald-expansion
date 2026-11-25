@@ -24534,6 +24534,80 @@ gBattleAnimMove_Peck::
 	waitforvisualfinish
 	end
 
+@ Shining Helix: Shadow Lugia's Shadow Blast. A dark, purple-black version of Aeroblast:
+@ the screen goes dark, Lugia pulses with a shadow aura, the air crescents are tinted
+@ shadow purple, and the target is engulfed in dark rings.
+gBattleAnimMove_ShadowBlast::
+	monbg ANIM_DEF_PARTNER
+	splitbgprio ANIM_TARGET
+	setalpha 12, 8
+	fadetobg BG_DARK
+	waitbgfadein
+	playsewithpan SE_M_NIGHTMARE, SOUND_PAN_ATTACKER
+	blend_color_cycle selector=F_PAL_ATTACKER, delay=2, num_blends=3, initial_blend_y=0, target_blend_y=11, color=RGB(12, 0, 18)
+	delay 12
+	call AeroblastBeam
+	blend_color_cyclebytag tag=ANIM_TAG_AIR_WAVE_2, delay=1, num_blends=12, initial_blend_y=11, target_blend_y=14, color=RGB(10, 0, 16)
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 5, 0, 50, 1
+	call AeroblastBeam
+	call AeroblastBeam
+	call AeroblastBeam
+	call AeroblastBeam
+	waitforvisualfinish
+	blend_color_cycle selector=F_PAL_TARGET, delay=2, num_blends=2, initial_blend_y=0, target_blend_y=12, color=RGB(12, 0, 18)
+	createsprite gDarkPulseSpriteTemplate, ANIM_TARGET, 2, 0, 0, 16
+	delay 3
+	createsprite gDarkPulseSpriteTemplate, ANIM_TARGET, 2, 0, 0, 16
+	delay 3
+	createsprite gDarkPulseSpriteTemplate, ANIM_TARGET, 2, 0, 0, 16
+	create_basic_hitsplat_sprite ANIM_ATTACKER, 2, x=0, y=0, relative_to=ANIM_TARGET, animation=0
+	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
+	waitforvisualfinish
+	clearmonbg ANIM_DEF_PARTNER
+	blendoff
+	restorebg
+	waitbgfadein
+	end
+
+@ Shining Helix: Shadow Lugia's Shadow Storm. An eerie purple storm that sweeps both foes:
+@ a swirling ghostly background, dark tornadoes tinted shadow purple, and both targets
+@ darkened as they shake.
+gBattleAnimMove_ShadowStorm::
+	monbg ANIM_DEF_PARTNER
+	splitbgprio ANIM_TARGET
+	setalpha 12, 8
+	fadetobg BG_GHOST
+	waitbgfadeout
+	createvisualtask AnimTask_StartSlidingBg, 5, 4096, 0, 1, -1
+	waitbgfadein
+	playsewithpan SE_M_NIGHTMARE, SOUND_PAN_TARGET
+	delay 8
+	playsewithpan SE_M_GUST, SOUND_PAN_TARGET
+	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 3, 64, 1
+	createvisualtask AnimTask_ShakeMon, 2, ANIM_DEF_PARTNER, 0, 3, 64, 1
+	blend_color_cycle selector=F_PAL_DEF_SIDE, delay=4, num_blends=4, initial_blend_y=0, target_blend_y=10, color=RGB(12, 0, 18)
+	call ShadowStormGust
+	delay 10
+	call ShadowStormGust
+	delay 10
+	call ShadowStormGust
+	delay 10
+	call ShadowStormGust
+	delay 10
+	call ShadowStormGust
+	delay 10
+	call ShadowStormGust
+	waitforvisualfinish
+	stopsound
+	clearmonbg ANIM_DEF_PARTNER
+	blendoff
+	call UnsetBackground
+	end
+ShadowStormGust:
+	createsprite gEllipticalGustCenteredSpriteTemplate, ANIM_ATTACKER, 2, 0, -16
+	blend_color_cyclebytag tag=ANIM_TAG_GUST, delay=1, num_blends=6, initial_blend_y=10, target_blend_y=14, color=RGB(10, 0, 16)
+	return
+
 gBattleAnimMove_Aeroblast::
 	monbg ANIM_DEF_PARTNER
 	call SetSkyBg

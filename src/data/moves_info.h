@@ -22141,7 +22141,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_Aeroblast,
+        .battleAnimScript = gBattleAnimMove_ShadowBlast,
     },
 
     [MOVE_SHADOW_STORM] =
@@ -22167,7 +22167,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_Hurricane,
+        .battleAnimScript = gBattleAnimMove_ShadowStorm,
     },
 
     // Z-Moves
