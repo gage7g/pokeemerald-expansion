@@ -22116,6 +22116,60 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_MalignantChain,
     },
 
+    // Shining Helix custom moves
+    [MOVE_SHADOW_BLAST] =
+    {
+        .name = COMPOUND_STRING("Shadow Blast"),
+        .description = COMPOUND_STRING(
+            "A blast of dark energy.\n"
+            "High critical-hit ratio."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_DARK,
+        .accuracy = 100,
+        .criticalHitStage = 1,
+        .pp = 5,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .windMove = TRUE,
+        .metronomeBanned = TRUE,
+        .copycatBanned = TRUE,
+        .mimicBanned = TRUE,
+        .sketchBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Aeroblast,
+    },
+
+    [MOVE_SHADOW_STORM] =
+    {
+        .name = COMPOUND_STRING("Shadow Storm"),
+        .description = COMPOUND_STRING(
+            "A dark storm that strikes\n"
+            "all foes at once."),
+        .effect = EFFECT_HIT,
+        .power = 95,
+        .type = TYPE_DARK,
+        .accuracy = 100,
+        .pp = 5,
+        .target = TARGET_BOTH,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .windMove = TRUE,
+        .metronomeBanned = TRUE,
+        .copycatBanned = TRUE,
+        .mimicBanned = TRUE,
+        .sketchBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Hurricane,
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =
     {

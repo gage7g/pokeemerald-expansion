@@ -8701,7 +8701,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .isRestrictedLegendary = TRUE,
         .isFrontierBanned = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
-        .levelUpLearnset = sLugiaLevelUpLearnset,
+        .levelUpLearnset = sLugiaShadowLevelUpLearnset,
         .teachableLearnset = sLugiaTeachableLearnset,
     },
 #endif //P_FAMILY_LUGIA

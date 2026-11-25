@@ -5099,6 +5099,20 @@ static const struct LevelUpMove sLugiaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(99, MOVE_FUTURE_SIGHT),
     LEVEL_UP_END
 };
+
+// Shining Helix: Shadow Lugia knows its XD signature moves from the start
+static const struct LevelUpMove sLugiaShadowLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_AEROBLAST),
+    LEVEL_UP_MOVE( 1, MOVE_RECOVER),
+    LEVEL_UP_MOVE( 1, MOVE_SHADOW_STORM),
+    LEVEL_UP_MOVE( 1, MOVE_SHADOW_BLAST),
+    LEVEL_UP_MOVE(55, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(66, MOVE_RAIN_DANCE),
+    LEVEL_UP_MOVE(77, MOVE_WHIRLWIND),
+    LEVEL_UP_MOVE(88, MOVE_ANCIENT_POWER),
+    LEVEL_UP_MOVE(99, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_END
+};
 #endif //P_FAMILY_LUGIA
 
 #if P_FAMILY_HO_OH
