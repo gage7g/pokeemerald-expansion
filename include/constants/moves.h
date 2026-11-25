@@ -906,7 +906,7 @@ enum __attribute__((packed)) Move
     MOVES_COUNT_GEN9,
 
     // Add any custom moves here, not further down!
-    // Shining Helix: Shadow Lugia's signature moves from Pokemon XD (Dark type for now, no Shadow type yet)
+    // Shining Helix: Shadow Lugia's signature moves from Pokemon XD (Flying and Psychic so Lugia gets STAB; no Shadow type yet)
     MOVE_SHADOW_BLAST = MOVES_COUNT_GEN9,
     MOVE_SHADOW_STORM,
     MOVES_COUNT_CUSTOM,

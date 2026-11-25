@@ -22121,11 +22121,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Shadow Blast"),
         .description = COMPOUND_STRING(
-            "A blast of dark energy.\n"
+            "A dark, vacuumed blast.\n"
             "High critical-hit ratio."),
         .effect = EFFECT_HIT,
         .power = 80,
-        .type = TYPE_DARK,
+        .type = TYPE_FLYING,
         .accuracy = 100,
         .criticalHitStage = 1,
         .pp = 5,
@@ -22152,7 +22152,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "all foes at once."),
         .effect = EFFECT_HIT,
         .power = 95,
-        .type = TYPE_DARK,
+        .type = TYPE_PSYCHIC,
         .accuracy = 100,
         .pp = 5,
         .target = TARGET_BOTH,
