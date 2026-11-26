@@ -17,11 +17,11 @@ Each one is edited (recolored and changed to match the design above) from a gene
 | --- | --- | --- |
 | Brooks | Swimmer (body) + Ace Trainer (head and hair) | Diamond/Pearl, HeartGold/SoulSilver |
 | Marley | Aroma Lady | Diamond/Pearl |
-| Gideon | Backpacker | Black/White |
+| Gideon | Black Belt | Black/White |
 | Apollo | Ruin Maniac | Diamond/Pearl |
 | Royce | Gentleman | HeartGold/SoulSilver |
 | Tobias | Black Belt | HeartGold/SoulSilver |
-| Venessa | Dragon Tamer | Diamond/Pearl |
+| Venessa | Veteran (female) | Diamond/Pearl/Platinum |
 | Tyler | Ace Trainer | Diamond/Pearl |
 
 Credits: Neon Skylar sprite pack (GBA resizes); original trainer art by Game Freak.
