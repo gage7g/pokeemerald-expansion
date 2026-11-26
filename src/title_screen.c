@@ -565,7 +565,7 @@ void CB2_InitTitleScreen(void)
 {
     if (IS_FRLG)
     {
-        CB2_InitTitleScreenFrlg();
+        CB2_InitTitleScreenHelix(); // Shining Helix custom title screen (old one: CB2_InitTitleScreenFrlg)
         return;
     }
     switch (gMain.state)
