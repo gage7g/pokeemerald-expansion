@@ -13804,3 +13804,282 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
 - Fire Blast
 - Stone Edge
+
+/*
+Shining Helix gym leaders (first drafts).
+Each battle starts with the gym's gimmick through "Starting Status".
+Teams come from the design doc; moves left out use the level-up defaults
+until we build each gym. Battle pics are placeholders until each leader's
+own battle sprite is made.
+*/
+
+=== TRAINER_LEADER_BROOKS ===
+Name: BROOKS
+Class: Leader Frlg
+Pic: Swimmer M Frlg
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+Starting Status: Weather Rain
+
+Krabby
+Level: 20
+
+Staryu
+Level: 20
+
+Pyukumuku
+Level: 21
+
+Lanturn
+Level: 22
+Ability: Volt Absorb
+
+=== TRAINER_LEADER_MARLEY ===
+Name: MARLEY
+Class: Leader Frlg
+Pic: Cooltrainer F Frlg
+Gender: Female
+Music: Serious
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+Starting Status: Swamp Player
+
+Gloom
+Level: 26
+
+Roselia
+Level: 26
+
+Misdreavus @ Eviolite
+Level: 27
+
+Seviper
+Level: 27
+
+Gengar
+Level: 28
+Ability: Cursed Body
+
+=== TRAINER_LEADER_GIDEON ===
+Name: GIDEON
+Class: Leader Frlg
+Pic: Cooltrainer M Frlg
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+Starting Status: Weather Snow
+
+Sneasel
+Level: 32
+
+Snorunt
+Level: 32
+
+Vanillish
+Level: 33
+
+Froslass
+Level: 33
+
+Mamoswine
+Level: 34
+Ability: Thick Fat
+
+=== TRAINER_LEADER_APOLLO ===
+Name: APOLLO
+Class: Leader Frlg
+Pic: Scientist Frlg
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+Starting Status: Weather Sun
+
+Rhyhorn
+Level: 36
+
+Coalossal
+Level: 36
+
+Torkoal
+Level: 37
+Ability: Shell Armor
+
+Runerigus
+Level: 37
+
+Camerupt @ Cameruptite
+Level: 38
+
+=== TRAINER_LEADER_ROYCE ===
+Name: ROYCE
+Class: Leader Frlg
+Pic: Gentleman Frlg
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Emolga
+Level: 45
+
+Kilowattrel
+Level: 45
+
+Electrode
+Level: 45
+Shiny: Yes
+
+Eelektross @ Eelektrossite
+Level: 46
+
+Toxtricity
+Level: 47
+Ability: Punk Rock
+
+=== TRAINER_LEADER_TOBIAS ===
+Name: TOBIAS
+Class: Leader Frlg
+Pic: Black Belt Frlg
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+Starting Status: Psychic Terrain
+
+Hitmontop
+Level: 52
+
+Lucario
+Level: 52
+
+Conkeldurr @ Flame Orb
+Level: 53
+Ability: Guts
+
+Metagross
+Level: 53
+
+Alakazam
+Level: 53
+
+Gallade @ Galladite
+Level: 54
+
+=== TRAINER_LEADER_VENESSA ===
+Name: VENESSA
+Class: Leader Frlg
+Pic: Cooltrainer F Frlg
+Gender: Female
+Music: Serious
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+Starting Status: Stealth Rock Player
+
+Archaludon @ Power Herb
+Level: 57
+Ability: Sturdy
+- Body Press
+- Electro Shot
+- Draco Meteor
+- Flash Cannon
+
+Noivern @ Choice Specs
+Level: 57
+Ability: Infiltrator
+- Boomburst
+- Draco Meteor
+- Hurricane
+- Flamethrower
+
+Hydrapple @ Assault Vest
+Level: 58
+Ability: Regenerator
+- Draco Meteor
+- Fickle Beam
+- Giga Drain
+- Earth Power
+
+Dragalge @ Black Sludge
+Level: 58
+Ability: Adaptability
+- Sludge Bomb
+- Draco Meteor
+- Flip Turn
+- Toxic Spikes
+
+Haxorus @ Lum Berry
+Level: 58
+Ability: Mold Breaker
+- Dragon Dance
+- Outrage
+- Earthquake
+- Close Combat
+
+Garchomp @ Garchompite Z
+Level: 59
+- Draco Meteor
+- Earthquake
+- Fire Blast
+- Stone Edge
+
+=== TRAINER_LEADER_TYLER ===
+Name: TYLER
+Class: Leader Frlg
+Pic: Cooltrainer M Frlg
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+Starting Status: Magic Room / Dark Move Boost
+
+Grimmsnarl
+Level: 61
+Ability: Prankster
+- Reflect
+- Light Screen
+- Spirit Break
+- Parting Shot
+
+Zoroark
+Level: 61
+Ability: Illusion
+- Nasty Plot
+- Dark Pulse
+- Focus Blast
+- Sludge Bomb
+
+Kingambit
+Level: 62
+Ability: Supreme Overlord
+- Swords Dance
+- Kowtow Cleave
+- Sucker Punch
+- Iron Head
+
+Weavile
+Level: 62
+Ability: Pressure
+- Swords Dance
+- Triple Axel
+- Knock Off
+- Ice Shard
+
+Krookodile
+Level: 62
+Ability: Intimidate
+- Stealth Rock
+- Taunt
+- Earthquake
+- Knock Off
+
+Greninja @ Greninjite
+Level: 63
+Ability: Protean
+- Hydro Pump
+- Dark Pulse
+- Ice Beam
+- Gunk Shot

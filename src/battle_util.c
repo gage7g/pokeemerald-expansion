@@ -2887,6 +2887,14 @@ bool32 TryFieldEffects(enum FieldEffectCases caseId)
             gStartingStatuses.weatherFog = gStartingStatuses.weatherFogTemporary = FALSE;
             return effect;
         }
+        // Shining Helix gym 8: Dark-type moves get 5% more power for this battle
+        else if (gStartingStatuses.darkMoveBoost)
+        {
+            gStartingStatuses.darkMoveBoost = FALSE;
+            gBattleStruct->darkMoveBoost = TRUE;
+            BattleScriptPushCursorAndCallback(BattleScript_DarkMoveBoostStarts);
+            return TRUE;
+        }
         break;
     case FIELD_EFFECT_OVERWORLD_TERRAIN:   // terrain starting from overworld weather
         if (B_THUNDERSTORM_TERRAIN == TRUE
@@ -6549,6 +6557,8 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
         modifier = uq4_12_multiply(modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
     if (IsPsychicTerrainAffected(battlerAtk, ctx->abilities[battlerAtk], ctx->holdEffects[battlerAtk], ctx->terrain) && moveType == TYPE_PSYCHIC)
         modifier = uq4_12_multiply(modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
+    if (gBattleStruct->darkMoveBoost && moveType == TYPE_DARK) // Shining Helix gym 8 (Fight Club Rules)
+        modifier = uq4_12_multiply(modifier, UQ_4_12(1.05));
     if (IsFieldMudSportAffected(ctx->moveType))
         modifier = uq4_12_multiply(modifier, UQ_4_12(GetConfig(B_SPORT_DMG_REDUCTION) >= GEN_5 ? 0.33 : 0.5));
     if (IsFieldWaterSportAffected(ctx->moveType))

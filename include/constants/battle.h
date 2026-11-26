@@ -718,6 +718,8 @@ enum FaintedActions
     F(STARTING_STATUS_WEATHER_SNOW_TEMPORARY,         weatherSnowTemporary,       (u32, 1)) /* Temporary Snow */                           \
     F(STARTING_STATUS_WEATHER_FOG,                    weatherFog,                 (u32, 1)) /* Permanent Fog */                            \
     F(STARTING_STATUS_WEATHER_FOG_TEMPORARY,          weatherFogTemporary,        (u32, 1)) /* Temporary Fog */                            \
+    /* Shining Helix gym gimmicks */                                                                                                       \
+    F(STARTING_STATUS_DARK_MOVE_BOOST,                darkMoveBoost,              (u32, 1)) /* Dark moves get 5% more power (gym 8) */     \
 
 #define UNPACK_STARTING_STATUS_ENUMS(_enum, ...) _enum,
 

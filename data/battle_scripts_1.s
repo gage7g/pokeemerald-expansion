@@ -3236,6 +3236,12 @@ BattleScript_OverworldHazard::
 	waitmessage B_WAIT_TIME_LONG
 	end3
 
+@ Shining Helix gym 8 (Noxlight): Dark-type moves get 5% more power for this battle.
+BattleScript_DarkMoveBoostStarts::
+	printstring STRINGID_DARKMOVEBOOST
+	waitmessage B_WAIT_TIME_LONG
+	end3
+
 BattleScript_SideStatusWoreOff::
     saveattacker
     copybyte gBattlerAttacker, sBATTLER

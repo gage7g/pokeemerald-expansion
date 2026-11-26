@@ -74,3 +74,117 @@ TestIsland_Text_MegaTestIntro:
 TestIsland_Text_MegaTestDefeat:
 	.string "Mega test done!$"
 
+
+@ Test: gym gimmicks. Talk to the referee and pick a gym. You fight that gym leader, and the
+@ battle starts with the gym's gimmick (weather, terrain, Swamp, Stealth Rock, Magic Room, Dark boost).
+@ Your team is healed before and after. The leader's beaten flag is cleared so you can retest.
+TestIsland_EventScript_GymReferee::
+	lock
+	faceplayer
+	message TestIsland_Text_GymPick
+	waitmessage
+	dynmultichoice 0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, TestIsland_Text_Gym1, TestIsland_Text_Gym2, TestIsland_Text_Gym3, TestIsland_Text_Gym4, TestIsland_Text_Gym5, TestIsland_Text_Gym6, TestIsland_Text_Gym7, TestIsland_Text_Gym8, TestIsland_Text_GymCancel
+	closemessage
+	switch VAR_RESULT
+	case 0, TestIsland_EventScript_Gym1
+	case 1, TestIsland_EventScript_Gym2
+	case 2, TestIsland_EventScript_Gym3
+	case 3, TestIsland_EventScript_Gym4
+	case 4, TestIsland_EventScript_Gym5
+	case 5, TestIsland_EventScript_Gym6
+	case 6, TestIsland_EventScript_Gym7
+	case 7, TestIsland_EventScript_Gym8
+	release
+	end
+
+TestIsland_EventScript_Gym1::
+	special HealPlayerParty
+	trainerbattle_no_intro TRAINER_LEADER_BROOKS, TestIsland_Text_GymWin
+	cleartrainerflag TRAINER_LEADER_BROOKS
+	goto TestIsland_EventScript_GymDone
+
+TestIsland_EventScript_Gym2::
+	special HealPlayerParty
+	trainerbattle_no_intro TRAINER_LEADER_MARLEY, TestIsland_Text_GymWin
+	cleartrainerflag TRAINER_LEADER_MARLEY
+	goto TestIsland_EventScript_GymDone
+
+TestIsland_EventScript_Gym3::
+	special HealPlayerParty
+	trainerbattle_no_intro TRAINER_LEADER_GIDEON, TestIsland_Text_GymWin
+	cleartrainerflag TRAINER_LEADER_GIDEON
+	goto TestIsland_EventScript_GymDone
+
+TestIsland_EventScript_Gym4::
+	special HealPlayerParty
+	trainerbattle_no_intro TRAINER_LEADER_APOLLO, TestIsland_Text_GymWin
+	cleartrainerflag TRAINER_LEADER_APOLLO
+	goto TestIsland_EventScript_GymDone
+
+TestIsland_EventScript_Gym5::
+	special HealPlayerParty
+	trainerbattle_no_intro TRAINER_LEADER_ROYCE, TestIsland_Text_GymWin
+	cleartrainerflag TRAINER_LEADER_ROYCE
+	goto TestIsland_EventScript_GymDone
+
+TestIsland_EventScript_Gym6::
+	special HealPlayerParty
+	trainerbattle_no_intro TRAINER_LEADER_TOBIAS, TestIsland_Text_GymWin
+	cleartrainerflag TRAINER_LEADER_TOBIAS
+	goto TestIsland_EventScript_GymDone
+
+TestIsland_EventScript_Gym7::
+	special HealPlayerParty
+	trainerbattle_no_intro TRAINER_LEADER_VENESSA, TestIsland_Text_GymWin
+	cleartrainerflag TRAINER_LEADER_VENESSA
+	goto TestIsland_EventScript_GymDone
+
+TestIsland_EventScript_Gym8::
+	special HealPlayerParty
+	trainerbattle_no_intro TRAINER_LEADER_TYLER, TestIsland_Text_GymWin
+	cleartrainerflag TRAINER_LEADER_TYLER
+	goto TestIsland_EventScript_GymDone
+
+TestIsland_EventScript_GymDone::
+	special HealPlayerParty
+	msgbox TestIsland_Text_GymAgain, MSGBOX_DEFAULT
+	release
+	end
+
+TestIsland_Text_GymPick:
+	.string "Which gym gimmick do you\n"
+	.string "want to test?$"
+
+TestIsland_Text_Gym1:
+	.string "Gym 1 Rain$"
+
+TestIsland_Text_Gym2:
+	.string "Gym 2 Swamp$"
+
+TestIsland_Text_Gym3:
+	.string "Gym 3 Snow$"
+
+TestIsland_Text_Gym4:
+	.string "Gym 4 Sun$"
+
+TestIsland_Text_Gym5:
+	.string "Gym 5 None$"
+
+TestIsland_Text_Gym6:
+	.string "Gym 6 Psychic$"
+
+TestIsland_Text_Gym7:
+	.string "Gym 7 Rocks$"
+
+TestIsland_Text_Gym8:
+	.string "Gym 8 Fight Club$"
+
+TestIsland_Text_GymCancel:
+	.string "Cancel$"
+
+TestIsland_Text_GymWin:
+	.string "Gimmick test done!$"
+
+TestIsland_Text_GymAgain:
+	.string "Your team is healed.\n"
+	.string "Talk to me to test another gym!$"
