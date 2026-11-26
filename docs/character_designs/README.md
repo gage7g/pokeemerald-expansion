@@ -18,7 +18,7 @@ shrunk from 80x80 to 64x64. Every leader uses a different base:
 | --- | --- | --- |
 | Brooks | Swimmer (body) + Ace Trainer (head and hair) | Diamond/Pearl, HeartGold/SoulSilver |
 | Marley | Aroma Lady | Diamond/Pearl |
-| Gideon | Black/White Ice gym leader sprite (supplied) | Black/White |
+| Gideon | Black/White Ice gym leader sprite (supplied); face from the Black/White Black Belt in the pack | Black/White |
 | Apollo | Ruin Maniac | Diamond/Pearl |
 | Royce | Gentleman | HeartGold/SoulSilver |
 | Tobias | Black/White Dragon gym leader sprite (supplied) | Black/White |
