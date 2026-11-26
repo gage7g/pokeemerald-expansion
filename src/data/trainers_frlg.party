@@ -13809,14 +13809,13 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Shining Helix gym leaders (first drafts).
 Each battle starts with the gym's gimmick through "Starting Status".
 Teams come from the design doc; moves left out use the level-up defaults
-until we build each gym. Battle pics are placeholders until each leader's
-own battle sprite is made.
+until we build each gym. Battle pics: graphics/trainers/front_pics/leader_*.png.
 */
 
 === TRAINER_LEADER_BROOKS ===
 Name: BROOKS
 Class: Leader Frlg
-Pic: Swimmer M Frlg
+Pic: Leader Brooks
 Gender: Male
 Music: Serious
 Double Battle: No
@@ -13839,7 +13838,7 @@ Ability: Volt Absorb
 === TRAINER_LEADER_MARLEY ===
 Name: MARLEY
 Class: Leader Frlg
-Pic: Cooltrainer F Frlg
+Pic: Leader Marley
 Gender: Female
 Music: Serious
 Double Battle: No
@@ -13865,7 +13864,7 @@ Ability: Cursed Body
 === TRAINER_LEADER_GIDEON ===
 Name: GIDEON
 Class: Leader Frlg
-Pic: Cooltrainer M Frlg
+Pic: Leader Gideon
 Gender: Male
 Music: Serious
 Double Battle: No
@@ -13891,7 +13890,7 @@ Ability: Thick Fat
 === TRAINER_LEADER_APOLLO ===
 Name: APOLLO
 Class: Leader Frlg
-Pic: Scientist Frlg
+Pic: Leader Apollo
 Gender: Male
 Music: Serious
 Double Battle: No
@@ -13917,7 +13916,7 @@ Level: 38
 === TRAINER_LEADER_ROYCE ===
 Name: ROYCE
 Class: Leader Frlg
-Pic: Gentleman Frlg
+Pic: Leader Royce
 Gender: Male
 Music: Serious
 Double Battle: No
@@ -13944,7 +13943,7 @@ Ability: Punk Rock
 === TRAINER_LEADER_TOBIAS ===
 Name: TOBIAS
 Class: Leader Frlg
-Pic: Black Belt Frlg
+Pic: Leader Tobias
 Gender: Male
 Music: Serious
 Double Battle: No
@@ -13973,7 +13972,7 @@ Level: 54
 === TRAINER_LEADER_VENESSA ===
 Name: VENESSA
 Class: Leader Frlg
-Pic: Cooltrainer F Frlg
+Pic: Leader Venessa
 Gender: Female
 Music: Serious
 Double Battle: No
@@ -14030,7 +14029,7 @@ Level: 59
 === TRAINER_LEADER_TYLER ===
 Name: TYLER
 Class: Leader Frlg
-Pic: Cooltrainer M Frlg
+Pic: Leader Tyler
 Gender: Male
 Music: Serious
 Double Battle: No

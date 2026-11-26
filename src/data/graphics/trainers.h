@@ -469,6 +469,24 @@ const u16 gTrainerPalette_LadyFrlg[] = INCGFX_U16("graphics/trainers/palettes/la
 const u32 gTrainerFrontPic_PainterFrlg[] = INCGFX_U32("graphics/trainers/front_pics/painter_frlg.png", ".4bpp.smol");
 const u16 gTrainerPalette_PainterFrlg[] = INCGFX_U16("graphics/trainers/palettes/painter_frlg.pal", ".gbapal");
 
+// Shining Helix gym leaders (edited from the Neon Skylar DS-to-GBA trainer sprite pack; see docs/character_designs/README.md)
+const u32 gTrainerFrontPic_LeaderBrooks[] = INCGFX_U32("graphics/trainers/front_pics/leader_brooks.png", ".4bpp.smol");
+const u16 gTrainerPalette_LeaderBrooks[] = INCGFX_U16("graphics/trainers/palettes/leader_brooks.pal", ".gbapal");
+const u32 gTrainerFrontPic_LeaderMarley[] = INCGFX_U32("graphics/trainers/front_pics/leader_marley.png", ".4bpp.smol");
+const u16 gTrainerPalette_LeaderMarley[] = INCGFX_U16("graphics/trainers/palettes/leader_marley.pal", ".gbapal");
+const u32 gTrainerFrontPic_LeaderGideon[] = INCGFX_U32("graphics/trainers/front_pics/leader_gideon.png", ".4bpp.smol");
+const u16 gTrainerPalette_LeaderGideon[] = INCGFX_U16("graphics/trainers/palettes/leader_gideon.pal", ".gbapal");
+const u32 gTrainerFrontPic_LeaderApollo[] = INCGFX_U32("graphics/trainers/front_pics/leader_apollo.png", ".4bpp.smol");
+const u16 gTrainerPalette_LeaderApollo[] = INCGFX_U16("graphics/trainers/palettes/leader_apollo.pal", ".gbapal");
+const u32 gTrainerFrontPic_LeaderRoyce[] = INCGFX_U32("graphics/trainers/front_pics/leader_royce.png", ".4bpp.smol");
+const u16 gTrainerPalette_LeaderRoyce[] = INCGFX_U16("graphics/trainers/palettes/leader_royce.pal", ".gbapal");
+const u32 gTrainerFrontPic_LeaderTobias[] = INCGFX_U32("graphics/trainers/front_pics/leader_tobias.png", ".4bpp.smol");
+const u16 gTrainerPalette_LeaderTobias[] = INCGFX_U16("graphics/trainers/palettes/leader_tobias.pal", ".gbapal");
+const u32 gTrainerFrontPic_LeaderVenessa[] = INCGFX_U32("graphics/trainers/front_pics/leader_venessa.png", ".4bpp.smol");
+const u16 gTrainerPalette_LeaderVenessa[] = INCGFX_U16("graphics/trainers/palettes/leader_venessa.pal", ".gbapal");
+const u32 gTrainerFrontPic_LeaderTyler[] = INCGFX_U32("graphics/trainers/front_pics/leader_tyler.png", ".4bpp.smol");
+const u16 gTrainerPalette_LeaderTyler[] = INCGFX_U16("graphics/trainers/palettes/leader_tyler.pal", ".gbapal");
+
 static const u8 gTrainerBackPic_None[] = INCGFX_U8("graphics/trainers/back_pics/none.png", ".4bpp");
 const u8 gTrainerBackPic_Brendan[] = INCGFX_U8("graphics/trainers/back_pics/brendan.png", ".4bpp");
 const u8 gTrainerBackPic_May[] = INCGFX_U8("graphics/trainers/back_pics/may.png", ".4bpp");
@@ -1225,5 +1243,37 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     [TRAINER_PIC_PAINTER_FRLG] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PainterFrlg, gTrainerPalette_PainterFrlg),
+    },
+    [TRAINER_PIC_LEADER_BROOKS] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderBrooks, gTrainerPalette_LeaderBrooks),
+    },
+    [TRAINER_PIC_LEADER_MARLEY] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderMarley, gTrainerPalette_LeaderMarley),
+    },
+    [TRAINER_PIC_LEADER_GIDEON] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderGideon, gTrainerPalette_LeaderGideon),
+    },
+    [TRAINER_PIC_LEADER_APOLLO] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderApollo, gTrainerPalette_LeaderApollo),
+    },
+    [TRAINER_PIC_LEADER_ROYCE] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderRoyce, gTrainerPalette_LeaderRoyce),
+    },
+    [TRAINER_PIC_LEADER_TOBIAS] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderTobias, gTrainerPalette_LeaderTobias),
+    },
+    [TRAINER_PIC_LEADER_VENESSA] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderVenessa, gTrainerPalette_LeaderVenessa),
+    },
+    [TRAINER_PIC_LEADER_TYLER] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderTyler, gTrainerPalette_LeaderTyler),
     },
 };
