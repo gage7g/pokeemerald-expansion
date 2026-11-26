@@ -76,7 +76,7 @@ TestIsland_Text_MegaTestDefeat:
 
 
 @ Test: gym gimmicks. Talk to the referee and pick a gym. You fight that gym leader, and the
-@ battle starts with the gym's gimmick (weather, terrain, Swamp, Stealth Rock, Magic Room, Dark boost).
+@ battle starts with the gym's gimmick (weather, terrains, Swamp, Stealth Rock, Magic Room, Dark boost).
 @ Your team is healed before and after. The leader's beaten flag is cleared so you can retest.
 TestIsland_EventScript_GymReferee::
 	lock
@@ -168,7 +168,7 @@ TestIsland_Text_Gym4:
 	.string "Gym 4 Sun$"
 
 TestIsland_Text_Gym5:
-	.string "Gym 5 None$"
+	.string "Gym 5 Electric$"
 
 TestIsland_Text_Gym6:
 	.string "Gym 6 Psychic$"
